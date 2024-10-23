@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 1px solid black;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 20svh 20svh 20svh 20svh;
+        }
+
+        #box3{grid-area: 1/1 / 2/6;}
+        #box5{grid-area: 4/5 / 6/6;}
+        #box2{grid-area: 4/2 / 5/5;}
+        #box4{grid-area: 2/5 / 4/4;}
+        #box1{grid-area: 2/4 / 5/5;}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">box1</div>
+        <div id="box2" class="box">box2</div>
+        <div id="box3" class="box">box3</div>
+        <div id="box4" class="box">box4</div>
+        <div id="box5" class="box">box5</div>
+    </div>
+</body>
+</html>
